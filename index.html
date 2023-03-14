@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="app.js" type="module" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container-fluid text-center bg-info">
+        <form id="questions" class="form">
+            <label class="elejir">Taditional</label>
+            <input type="radio" class="elejir" name="elija" value="Taditional"> <br>
+
+            <label class="elejir">PointRange</label>
+            <input type="radio" class="elejir" name="elija" value="PointRange"> <br>
+            
+            <input type="number" class="envio" name="numero" pattern="[0-9]+" placeholder="Ingrese numero">
+            
+            <button type="submit" class="envio" value="enviar">enviar</button>
+        </form>
+        
+        <div class="row">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Taditional</th>
+                        <th>14-Point-Range</th>
+                        <th>Letter</th>
+                        <th>SBG-Rating</th>
+                        <th>Profice-Level-With-Standar</th>
+                    </tr>
+                </thead>
+                <tbody id="board">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
